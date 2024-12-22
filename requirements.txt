@@ -1,0 +1,6 @@
+chromadb
+torch
+torchvision
+facenet-pytorch
+langchain
+langchain-community
