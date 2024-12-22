@@ -46,6 +46,7 @@ def search_face_embedding(chroma_db, query_embedding, top_k=5):
         # Parse results
         for document in results:
             print(f"Name: {document.metadata.get('name', 'Unknown')}")
+            return document.metadata.get('name', 'Unknown')
     except Exception as e:
         print(f"Error searching face embedding: {e}")
 
