@@ -1,3 +1,7 @@
+### Project Ongoing
+
+![Project Overview Diagram](overview.png)
+
 ### steps to generate embeddings for now
 
 - Gather all photos into a folder --> images/
