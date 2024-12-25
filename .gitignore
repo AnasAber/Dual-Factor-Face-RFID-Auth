@@ -9,4 +9,5 @@ testing_face_recognition.py
 chroma_check.py
 authentification.py
 __pycache__/
+embeddings_new.csv
 
