@@ -1,22 +1,36 @@
 import sqlite3
 import random
-import string
+import uuid
 
 # Connect to SQLite database
-conn = sqlite3.connect("access_control.db")
+conn = sqlite3.connect("../access_control.db")
 cursor = conn.cursor()
 
 # Initialize the database
 def initialize_database():
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
-            card_uid TEXT UNIQUE NOT NULL,
-            face_embedding_id TEXT NOT NULL
-        )
-    """)
-    conn.commit()
+        """Create tables with support for multiple face embeddings per user."""
+        # Users table stores basic user information
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                card_uid TEXT UNIQUE NOT NULL,
+                face_embedding_id TEXT NOT NULL
+            )
+        """)
+        
+        # Face embeddings table allows multiple entries per user
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS face_embeddings (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                user_id INTEGER NOT NULL,
+                face_embedding_id TEXT NOT NULL,
+                image_path TEXT NOT NULL,
+                FOREIGN KEY (user_id) REFERENCES users (id),
+                UNIQUE (face_embedding_id)
+            )
+        """)
+        conn.commit()
 
 # Insert provided data and generate dummy data
 def populate_database():
@@ -34,7 +48,7 @@ def populate_database():
     # Helper function to generate a random face embedding ID
     def generate_face_embedding_id():
         while True:
-            embedding_id = "".join(random.choices(string.ascii_letters + string.digits, k=10))
+            embedding_id = str(uuid.uuid4())  # "".join(random.choices(string.ascii_letters + string.digits, k=10))
             if embedding_id not in face_embedding_ids:
                 face_embedding_ids.add(embedding_id)
                 return embedding_id

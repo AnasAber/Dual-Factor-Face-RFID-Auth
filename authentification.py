@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
 
     card_uid = "C3 7F F2 D9"
-    face_path = "data/2_anas.jpg"
+    face_path = "data/1_anas.jpeg"
     face_embedding = extract_embedding(face_path)
 
     # Process the RFID data

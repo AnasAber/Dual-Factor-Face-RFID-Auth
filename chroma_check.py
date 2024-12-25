@@ -1,6 +1,7 @@
 from langchain_community.vectorstores import Chroma
 from face_recognition_model import get_embeddings, extract_embedding
 import pandas as pd
+import uuid
 import json
 import os
 
@@ -58,7 +59,7 @@ if __name__ == "__main__":
     for index, row in df.iterrows():
         print(f'Adding id: {row["id_image"]}, name: {row["name"]}')
         add_face_embedding(
-            face_embedding_id=str(row["id_image"]),
+            face_embedding_id=str(uuid.uuid4()),
             embedding_path=row["image_path"],
             metadata={"name": row["name"]}
         )
