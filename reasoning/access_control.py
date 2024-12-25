@@ -1,7 +1,10 @@
+import sys
+import os
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(project_root)
 from chroma_check import search_face_embedding, extract_embedding, get_embeddings
 from langchain.vectorstores import Chroma
 import sqlite3
-import os
 
 class AccessControl:
     def __init__(self, conn, db_path="../access_control.db", chroma_dir="../chroma_db_test"):

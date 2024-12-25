@@ -8,3 +8,5 @@ sqlite_db/
 testing_face_recognition.py
 chroma_check.py
 authentification.py
+__pycache__/
+

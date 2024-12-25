@@ -1,6 +1,6 @@
-from face_recognition_model import extract_embedding, get_embeddings
+from reasoning.face_recognition_model import extract_embedding, get_embeddings
 from chroma_check import add_face_embedding, search_face_embedding
-from face_recognition_model import extract_embedding
+from reasoning.face_recognition_model import extract_embedding
 from langchain.vectorstores import Chroma
 import os
 

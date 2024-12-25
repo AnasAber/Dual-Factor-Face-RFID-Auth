@@ -1,6 +1,6 @@
 import sqlite3
 from langchain_community.vectorstores import Chroma
-from face_recognition_model import get_embeddings, extract_embedding
+from reasoning.face_recognition_model import get_embeddings, extract_embedding
 import os
 import uuid
 from datetime import datetime

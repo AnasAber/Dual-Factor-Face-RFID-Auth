@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import Chroma
-from face_recognition_model import get_embeddings, extract_embedding
+from reasoning.face_recognition_model import get_embeddings, extract_embedding
 import pandas as pd
 import uuid
 import json
