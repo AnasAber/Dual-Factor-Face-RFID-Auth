@@ -1,6 +1,6 @@
 ### Project Ongoing
 
-![Project Overview Diagram](overview.png)
+![Project Overview Diagram](images/overview.png)
 
 ### steps to generate embeddings for now
 

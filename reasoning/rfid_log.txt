@@ -1,0 +1,151 @@
+{"timestamp": "2024-12-20 09:36:06", "data": "Begin!", "type": "other"}
+{"timestamp": "2024-12-20 09:36:06", "data": "Firmware Version: 0x92", "type": "other"}
+{"timestamp": "2024-12-20 09:36:07", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-20 09:36:11", "data": "New,UID:  F1 11 8A 3F", "type": "other"}
+{"timestamp": "2024-12-20 09:36:14", "data": "New,UID:  08 E9 99 2D", "type": "other"}
+{"timestamp": "2024-12-20 09:36:16", "data": "Recognized,UID:  C3 7F F2 D9", "type": "other"}
+{"timestamp": "2024-12-20 09:38:42", "data": "92", "type": "other"}
+{"timestamp": "2024-12-20 09:38:42", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-20 09:38:45", "data": "Card UID:  08 2C E0 90", "type": "card_scan"}
+{"timestamp": "2024-12-20 09:38:45", "data": "New card detected! Access denied!", "type": "access_denied"}
+{"timestamp": "2024-12-20 09:38:48", "data": "Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-20 09:38:48", "data": "New card detected! Access denied!", "type": "access_denied"}
+{"timestamp": "2024-12-20 09:38:50", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-20 09:38:50", "data": "Card recognized! Access granted!", "type": "access_granted"}
+{"timestamp": "2024-12-20 09:38:50", "data": "Opening door...", "type": "other"}
+{"timestamp": "2024-12-20 09:38:51", "data": "Closing door...", "type": "other"}
+{"timestamp": "2024-12-20 10:09:46", "data": "92", "type": "other"}
+{"timestamp": "2024-12-20 10:09:46", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-20 10:09:49", "data": "Card UID:  08 60 40 AA", "type": "card_scan"}
+{"timestamp": "2024-12-20 10:09:49", "data": "New card detected! Access denied!", "type": "access_denied"}
+{"timestamp": "2024-12-20 10:09:52", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-20 10:09:52", "data": "Card recognized! Access granted!", "type": "access_granted"}
+{"timestamp": "2024-12-20 10:09:52", "data": "Opening door...", "type": "other"}
+{"timestamp": "2024-12-20 10:09:53", "data": "Closing door...", "type": "other"}
+{"timestamp": "2024-12-20 11:20:01", "data": "92", "type": "other"}
+{"timestamp": "2024-12-20 11:20:01", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-20 11:20:04", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-20 11:20:05", "data": "Card recognized! Access granted!", "type": "access_granted"}
+{"timestamp": "2024-12-20 11:20:05", "data": "Opening door...", "type": "other"}
+{"timestamp": "2024-12-20 11:20:06", "data": "Closing door...", "type": "other"}
+{"timestamp": "2024-12-20 11:20:11", "data": "Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-20 11:20:11", "data": "New card detected! Access denied!", "type": "access_denied"}
+{"timestamp": "2024-12-20 11:20:25", "data": "Card UID:  08 BD 38 D4", "type": "card_scan"}
+{"timestamp": "2024-12-20 11:20:25", "data": "New card detected! Access denied!", "type": "access_denied"}
+{"timestamp": "2024-12-21 10:42:10", "data": "FF", "type": "other"}
+{"timestamp": "2024-12-21 10:42:11", "data": "RFID Reader initialization failed!", "type": "other"}
+{"timestamp": "2024-12-21 10:42:31", "data": "0", "type": "other"}
+{"timestamp": "2024-12-21 10:42:32", "data": "RFID Reader initialization failed!", "type": "other"}
+{"timestamp": "2024-12-21 10:42:39", "data": "0", "type": "other"}
+{"timestamp": "2024-12-21 10:42:39", "data": "RFID Reader initialization failed!", "type": "other"}
+{"timestamp": "2024-12-21 10:42:57", "data": "92", "type": "other"}
+{"timestamp": "2024-12-21 10:42:57", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-21 10:43:10", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:12", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:14", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:25", "data": "Card recognized! Access granted!Card UID:  08 1B F0 76", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:27", "data": "New card detected! Access denied!Card UID:  08 AA 1A 91", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:36", "data": "New card detected! Access denied!Card UID:  08 79 9B B9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:44", "data": "New card detected! Access denied!Card UID:  08 61 D0 B0", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:50", "data": "New card detected! Access denied!Card UID:  08 86 B9 28", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:52", "data": "New card detected! Access denied!Card UID:  08 E7 24 62", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:55", "data": "New card detected! Access denied!Card UID:  08 21 25 C2", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:57", "data": "New card detected! Access denied!Card UID:  08 BC 60 32", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:43:58", "data": "New card detected! Access denied!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:02", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:03", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:04", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:05", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:07", "data": "Card recognized! Access granted!Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:17", "data": "New card detected! Access denied!Card UID:  08 62 CC E1", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:19", "data": "New card detected! Access denied!Card UID:  08 6A E3 BE", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:22", "data": "New card detected! Access denied!Card UID:  08 E5 77 A4", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:24", "data": "New card detected! Access denied!Card UID:  08 91 35 31", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:25", "data": "New card detected! Access denied!Card UID:  08 3E 9C 62", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:25", "data": "New card detected! Access denied!Card UID:  08 47 B2 D0", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:27", "data": "New card detected! Access denied!Card UID:  08 3C A2 AD", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:28", "data": "New card detected! Access denied!Card UID:  08 B8 9F 4A", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:29", "data": "New card detected! Access denied!Card UID:  08 73 77 DC", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:30", "data": "New card detected! Access denied!Card UID:  08 7F 52 8D", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:31", "data": "New card detected! Access denied!Card UID:  08 CB 72 89", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:32", "data": "New card detected! Access denied!Card UID:  08 CA 50 3C", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:32", "data": "New card detected! Access denied!Card UID:  08 13 2C BD", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:33", "data": "New card detected! Access denied!Card UID:  08 BC 6F 4D", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:34", "data": "New card detected! Access denied!Card UID:  08 F6 FD F1", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:34", "data": "New card detected! Access denied!Card UID:  08 F4 03 37", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:36", "data": "New card detected! Access denied!Card UID:  08 33 08 51", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:36", "data": "New card detected! Access denied!Card UID:  08 2A F0 0C", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:37", "data": "New card detected! Access denied!Card UID:  08 89 C7 10", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:38", "data": "New card detected! Access denied!Card UID:  08 94 52 76", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:38", "data": "New card detected! Access denied!Card UID:  08 E1 6C 40", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:39", "data": "New card detected! Access denied!Card UID:  08 98 26 34", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:40", "data": "New card detected! Access denied!Card UID:  08 63 2E 25", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:41", "data": "New card detected! Access denied!Card UID:  08 A6 FC DD", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:42", "data": "New card detected! Access denied!Card UID:  08 62 94 17", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:42", "data": "New card detected! Access denied!Card UID:  08 4E 4D 83", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:44:44", "data": "New card detected! Access denied!Card UID:  08 50 A0 AA", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:03", "data": "New card detected! Access denied!Card UID:  08 1F 17 11", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:14", "data": "New card detected! Access denied!Card UID:  08 0D 6E B1", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:14", "data": "New card detected! Access denied!Card UID:  08 99 C3 F0", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:15", "data": "New card detected! Access denied!Card UID:  08 4C 18 26", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:16", "data": "New card detected! Access denied!Card UID:  08 BF CE 16", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:17", "data": "New card detected! Access denied!Card UID:  08 4C AD 5D", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:18", "data": "New card detected! Access denied!Card UID:  08 24 E2 A9", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:45:19", "data": "New card detected! Access denied!Card UID:  08 F0 FF 5A", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:10", "data": "92", "type": "other"}
+{"timestamp": "2024-12-21 10:46:10", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-21 10:46:13", "data": "Card UID:  08 70 28 AC", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:16", "data": "New card detected! Access denied!Card UID:  08 01 05 BB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:17", "data": "New card detected! Access denied!Card UID:  08 DF B9 94", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:18", "data": "New card detected! Access denied!Card UID:  08 C9 78 68", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:30", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:34", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:41", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:44", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:48", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:50", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 10:46:54", "data": "New card detected! Access denied!Card UID:  CE 29 EF DB", "type": "card_scan"}
+{"timestamp": "2024-12-21 11:23:42", "data": "92", "type": "other"}
+{"timestamp": "2024-12-21 11:23:42", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-21 11:23:43", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-21 11:24:27", "data": "92", "type": "other"}
+{"timestamp": "2024-12-21 11:24:27", "data": "RFID Reader initialization failed!", "type": "other"}
+{"timestamp": "2024-12-21 11:24:34", "data": "92", "type": "other"}
+{"timestamp": "2024-12-21 11:24:34", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-21 11:24:35", "data": "Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:03:56", "data": "0", "type": "other"}
+{"timestamp": "2024-12-22 15:03:57", "data": "RFID Reader initialization failed!", "type": "other"}
+{"timestamp": "2024-12-22 15:04:03", "data": "92", "type": "other"}
+{"timestamp": "2024-12-22 15:04:04", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-22 15:04:07", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:04:10", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:04:15", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:04:18", "data": "Card recognized! Access granted!Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:04:20", "data": "New card detected! Access denied!Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:04:22", "data": "New card detected! Access denied!Card UID:  F1 11 8A 3F", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:07:03", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-22 15:07:06", "data": "Recognized,", "type": "other"}
+{"timestamp": "2024-12-22 15:07:06", "data": "UID:  C3 7F F2 D9", "type": "other"}
+{"timestamp": "2024-12-22 15:07:08", "data": "Recognized,", "type": "other"}
+{"timestamp": "2024-12-22 15:07:08", "data": "UID:  C3 7F F2 D9", "type": "other"}
+{"timestamp": "2024-12-22 15:13:13", "data": "92", "type": "other"}
+{"timestamp": "2024-12-22 15:13:13", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-22 15:13:15", "data": "Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:13:16", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:13:23", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:13:24", "data": "Card recognized! Access granted!Card UID:  C3 7F F2 D9", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:15:20", "data": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000FF", "type": "other"}
+{"timestamp": "2024-12-22 15:15:20", "data": "RFID Reader initialization failed!", "type": "other"}
+{"timestamp": "2024-12-22 15:53:13", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-22 15:53:15", "data": "92", "type": "other"}
+{"timestamp": "2024-12-22 15:53:15", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-22 15:53:17", "data": "Card UID:  C3 7F F2 D9 | Card recognized", "type": "card_scan"}
+{"timestamp": "2024-12-22 15:53:19", "data": "Card UID:  C3 7F F2 D9 | Card recognized", "type": "card_scan"}
+{"timestamp": "2024-12-22 16:01:49", "data": "92", "type": "other"}
+{"timestamp": "2024-12-22 16:01:49", "data": "RFID Reader is working!", "type": "other"}
+{"timestamp": "2024-12-22 16:01:52", "data": "Card UID:  F1 11 8A 3F | Unknown card detected | Access denied!", "type": "card_scan"}
+{"timestamp": "2024-12-24 16:09:24", "uid": "C3 7F F2 D9", "is_recognized": true, "raw_data": "Card UID:  C3 7F F2 D9 | Card recognized", "type": "access_granted"}
+{"timestamp": "2024-12-24 16:09:30", "uid": "C3 7F F2 D9", "is_recognized": true, "raw_data": "Card UID:  C3 7F F2 D9 | Card recognized", "type": "access_granted"}
+{"timestamp": "2024-12-24 16:09:30", "uid": "C3 7F F2 D9", "is_recognized": true, "raw_data": "Card UID:  C3 7F F2 D9 | Card recognized", "type": "access_granted"}
+{"timestamp": "2024-12-24 16:09:32", "uid": "F1 11 8A 3F", "is_recognized": false, "raw_data": "Card UID:  F1 11 8A 3F | Unknown card detected | Access denied!", "type": "access_denied"}
+{"timestamp": "2024-12-24 16:09:33", "uid": "F1 11 8A 3F", "is_recognized": false, "raw_data": "Card UID:  F1 11 8A 3F | Unknown card detected | Access denied!", "type": "access_denied"}

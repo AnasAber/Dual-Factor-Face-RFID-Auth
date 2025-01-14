@@ -1,3 +1,14 @@
 arduino-ide_nightly-20241212_Linux_64bit/
 .env
 chroma_db_test/
+anas/
+moh/
+imagess/
+sqlite_db/
+testing_face_recognition.py
+chroma_check.py
+authentification.py
+__pycache__/
+embeddings_new.csv
+anas_cam/
+
