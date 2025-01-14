@@ -91,6 +91,7 @@ class AccessControlSystem:
                     if data:
                         rfid_data = self.rfid_logger.parse_rfid_data(data)
                         if rfid_data:
+                            rfid_data['is_recognized'] = True  # Set recognition status correctly
                             photo_path = self.capture_photo()
                             
                             access_request = {
@@ -112,8 +113,8 @@ class AccessControlSystem:
         try:
             print("treatment...")
             # Create an AccessControl instance with the new connection
-            access_control = AccessControl(conn)
-            
+            access_control = AccessControl(conn, db_path="../access_control.db", chroma_dir="chroma_db_test")
+
             # Process the request
             print("process request...")
             response = access_control.process_access_request(rfid_data, photo_path)
@@ -133,6 +134,7 @@ class AccessControlSystem:
                 # Extract the data
                 rfid_data = access_request['rfid_data']
                 photo_path = access_request['photo_path']
+                print(f"photo path: {photo_path}")
                 
                 # Log the detection
                 print(f"\nCard detected - UID: {rfid_data['uid']}")

@@ -5,6 +5,7 @@ from PIL import Image
 import os, re
 import numpy as np
 import csv
+import cv2
 
 
 # Initialize FaceNet model
@@ -58,50 +59,77 @@ def get_embeddings():
     return face_embedding_function
 
 
-def generate_embeddings_csv(image_dir, csv_filename, names):
-    """Generates embeddings and stores them in a CSV file with names."""
-    if not names:
-        raise ValueError("The 'names' list cannot be empty.")
+def extract_embedding_from_frame(face_frame):
+    """Extract face embedding from a detected face frame."""
+    try:
+        # Convert the frame to PIL image
+        img = Image.fromarray(face_frame).resize((160, 160)).convert('RGB')
+        img_tensor = torch.tensor(np.array(img)).permute(2, 0, 1).unsqueeze(0).float()
+        with torch.no_grad():
+            embedding = model(img_tensor)
+        return embedding.detach().cpu().numpy().flatten()  # Flatten the embedding
+    except Exception as e:
+        print(f"Error extracting embedding: {e}")
+        return None
+
+def trace_and_annotate_faces(camera_index=0):
+    """Open the PC camera, detect faces, annotate them, and optionally extract embeddings."""
+    # Load Haar cascade for face detection
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
     
-    with open(csv_filename, 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerow(["id_image", "name", "embedding", "image_path"])  # Add "name" to header
+    # Initialize the camera
+    cap = cv2.VideoCapture(camera_index)
+    if not cap.isOpened():
+        print("Error: Could not open camera")
+        return
 
-        image_files = sorted(
-            [f for f in os.listdir(image_dir) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.bmp'))],
-            key=lambda x: int(re.search(r"(\d+)", x).group(1)) if re.search(r"(\d+)", x) else float('inf')
-        )
+    try:
+        print("Press 'q' to exit.")
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                print("Error: Unable to capture frame")
+                break
 
-        if len(image_files) != len(names):
-            print(f"Warning: Number of images ({len(image_files)}) does not match the number of names ({len(names)}). Using what is available.")
-            min_len = min(len(image_files), len(names))
-            image_files = image_files[:min_len]
-            names = names[:min_len]
-
-        for i, filename in enumerate(image_files):
-            try:
-                image_path = os.path.join(image_dir, filename)
-                match = re.search(r"(\d+)\.(jpg|png|jpeg|gif|bmp)", filename, re.IGNORECASE)
-                if not match:
-                    print(f"Warning: could not find number in filename: {filename}")
-                    continue
-                file_number = match.group(1)
-                embedding = extract_embedding(image_path)
+            # Convert to grayscale for face detection
+            gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            
+            # Detect faces
+            faces = face_cascade.detectMultiScale(gray_frame, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+            
+            for (x, y, w, h) in faces:
+                # Draw a rectangle around the face
+                cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                
+                # Extract face region
+                face_frame = frame[y:y + h, x:x + w]
+                
+                # Extract embedding (optional)
+                embedding = extract_embedding_from_frame(face_frame)
                 if embedding is not None:
-                    writer.writerow([file_number, names[i], embedding.tolist(),image_path])  # Write name to CSV
-                    print(f"Generated embedding for {filename} (Name: {names[i]})")
-            except Exception as e:
-                print(f"Error processing {filename}: {e}")
+                    cv2.putText(frame, "Face detected", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
-if __name__ == "__main__":
-    image_directory = "data/images"  # Directory containing the renamed images
-    csv_file = "embeddings_new.csv"  # Name of the CSV file to create
+            # Display the frame
+            cv2.imshow("Face Detection", frame)
 
-    if not os.path.exists(image_directory) or not os.path.isdir(image_directory):
-        print(f"Error: Directory '{image_directory}' not found.")
-        exit(1)
+            # Exit on 'q' key
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+    finally:
+        # Release resources
+        cap.release()
+        cv2.destroyAllWindows()
 
-    names = ["james", "Anna", "Oscar", "Amy", "Love", "Meryem", "Mike", "Karen", "Kathrine", "Bob", "Sara","Auston","Adam", "Salah", "Gorgia" , "Micheal", "Phibie", "Mike", "Monika", "Ann","Brai", "Sofia", "Roger", "Naomi", "Jaklin"]
 
-    generate_embeddings_csv(image_directory, csv_file, names)
-    print("Embedding generation and CSV creation complete.")
+# if __name__ == "__main__":
+#     image_directory = "data/images"  # Directory containing the renamed images
+#     csv_file = "embeddings_new.csv"  # Name of the CSV file to create
+
+#     if not os.path.exists(image_directory) or not os.path.isdir(image_directory):
+#         print(f"Error: Directory '{image_directory}' not found.")
+#         exit(1)
+
+#     names = ["james", "Anna", "Oscar", "Amy", "Love", "Meryem", "Mike", "Karen", "Kathrine", "Bob", "Sara","Auston","Adam", "Salah", "Gorgia" , "Micheal", "Phibie", "Mike", "Monika", "Ann","Brai", "Sofia", "Roger", "Naomi", "Jaklin"]
+
+#     generate_embeddings_csv(image_directory, csv_file, names)
+#     print("Embedding generation and CSV creation complete.")
